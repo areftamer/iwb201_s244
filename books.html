@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+         $(document).ready(function(){
+      $('#check1').click(function(){
+        $('#details1').fadeToggle()
+      })
+      $('#check2').click(function(){
+        $('#details2').fadeToggle()
+      })
+      $('#check3').click(function(){
+        $('#details3').fadeToggle()
+      })
+      $('#check4').click(function(){
+        $('#details4').fadeToggle()
+      })
+      $('.check5').click(function(){
+        $('#details5').fadeToggle()
+      })
+      $('#check6').click(function(){
+        $('#details6').fadeToggle()
+      })
+      $('#check7').click(function(){
+        $('#details7').fadeToggle()
+      })
+      $('#check8').click(function(){
+        $('#details8').fadeToggle()
+      })
+      $('#check9').click(function(){
+        $('#details9').fadeToggle()
+      })
+      $('#check10').click(function(){
+        $('#details10').fadeToggle()
+      })
+    
+
+      $('.sign-in-buttom').click(function(){
+        $('#login-form').slideToggle(2000)
+      })
+      })
+    </script>
+   
+</head>
+<body>
+    <style>
+        body{
+            background-image: linear-gradient(to top , #eaeaea , #c7c7c7) ;
+            height: 100vh;
+        }
+    </style>
+
+    <script type="text/javascript" src="myFunctions.js"></script> 
+
+    <h1>Our library</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="books.html" title="Books">Books</a></li>
+            <li><a href="AboutUs.html" title="AboutUs">AboutUs</a></li>
+        </ul>
+    </nav>
+    
+    <hr>
+    
+    <h2>قائمة العقارات</h2>
+    <div >
+        <table>
+          <thead>
+              <tr>
+                  <th> ISBN رمز الكتاب</th>
+                  <th>العنوان</th>
+                  <th> السعر</th>
+                  <th>إظهار التفاصيل</th>
+                  <th>اختيار</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>978-9770915594</td>
+                <td> كن أنت</td>
+                <td>12000 ل.س</td>
+                <td><input id="check5" class="check5" type="checkbox" /></td>
+                <td><input name="choose" type="radio" /></td>
+            </tr>
+            <tr id="details5" class="hidden">
+                <td colspan="5">
+                    <div class="details-container">
+                        <ul class="details-list">
+                            <li> <h3>الناشر:</h3>دار ملهمون للنشر والتوزيع</li>
+                            <li> <h3>تصنيف الكتاب:</h3>ذاتي</li>
+                            <li><h3> الملخص:</h3>>هذا الكتاب فيه 
+                                رساله لكل طالب او طالبه في مرحله الثانوية العامة انها ليست آخر 
+                                الرحله او الطريق وان الحياه تخبئ لنا ما هو أفضل فيما بعد وان
+                                 الحياه تحتاج الي طاقتك انت وليس ما تاخذه من غيرك. وان النجاح
+                                 لا يأتي الا بالمثابره والعزم علي تحطيم ما يواجهنا من مشكلات </li>
+                        </ul>
+                        <div class="details-images">
+                            <img src="images/book5.PNG" >
+                            <img src="images/Book22.PNG" >
+                            <img src="images/Book444.PNG" >
+                            
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            
+              <tr>
+                  <td>978-9953891718</td>
+                  <td> فن اللامبالاة</td>
+                  <td>15500 ل.س</td>
+                  <td><input id="check2" class="check" type="checkbox" /></td>
+                  <td><input name="choose" type="radio" /></td>
+              </tr>
+              <tr id="details2" class="hidden">
+                  <td colspan="5">
+                      <div class="details-container">
+                          <ul class="details-list">
+                              <li><h1> الناشر:</h1>هاربر كولنز</li>
+                              <li> <h3>تصنيف الكتاب: </h3> التنمية البشرية</li>
+                              <li><h3> الملخص:</h3> هو كتاب من تأليف رجل الأعمال 
+                                  والكاتب مارك مانسون، يُحاول فيه نسف فكرة الإيجابية طوال الوقت،
+                                   فالإيجابية من منظور الكاتب تكون من خلال التأقلم مع الشدائد 
+                                  والمصاعب، ويتكون الكتاب من 9 فصول، ويقع في حدود 270 صفحةً
+
+                                 </li>
+                          </ul>
+                         <div class="details-images">
+                              <img src="images/book2.PNG" >
+                              <img src="images/Book555.PNG" >
+                              <img src="images/Book777.PNG" >
+                           
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>978-9953451080</td>
+                  <td> هيبتا</td>
+                  <td>10000 ل.س</td>
+                  <td><input id="check3" class="check" type="checkbox" /></td>
+                  <td><input name="choose" type="radio" /></td>
+              </tr>
+              <tr id="details3" class="hidden">
+                  <td colspan="5">
+                      <div class="details-container">
+                          <ul class="details-list">
+                              <li><h3>الناشر</h3>هادي الباجوري.</li>
+                              <li> <h3>تصنيف الكتاب:</h3> بحث فلسفي</li>
+                              <li><h3> الملخص:</h3>رواية هيبتا من هي من الروايات 
+                                  التي حصلت على انتشارٍ واسعٍ، وهي للكاتب ذو الجنسية المصرية محمد صادق،
+                                   وحصلت هذه الرواية المرتبة الأولى، وأصبحت من ضمن الكتب الأكثر بيعًا
+                                  ، وفي سنة 2014 حصلت على اللقب من قبل مكتبات فيرجن ميجا ستورز،
+                                   وألف التي تقع في جمهورية مصر، وقد تم طباعة هذه الرواية 45 طبعة
+                              </li>
+                          </ul>
+                         <div class="details-images">
+                              <img src="images/book3.PNG">
+                              
+                              <img src="images/book333.PNG">
+                              
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <td>978-9770916738</td>
+                  <td> قوة عقلك الباطن</td>
+                  <td>10000 ل.س</td>
+                  <td><input id="check4" class="check" type="checkbox" /></td>
+                  <td><input name="choose" type="radio" /></td>
+              </tr>
+              <tr id="details4" class="hidden">
+                  <td colspan="5">
+                      <div class="details-container">
+                          <ul class="details-list">
+                              <li> <h3>الناشر:</h3>وليام جيمس</li>
+                              <li> <h3>تصنيف الكتاب:</h3> التنمية البشرية وتنمية الذات</li>
+                              <li><h3> الملخص:</h3>هذا الكتاب يشرح كيفية تغير تفكيرك من فقير الى تفكير
+                                  عقلية غني ويحتوي الكتاب على قصص واقعيه
+                                  للناس الذين أستخدمو عقلهم اللاواعي او العقل الباطن في تغير نمط حاتهم الى الافضل</li>
+                          </ul>
+                          <div class="details-images">
+                              <img src="images/book4.PNG">
+                              <img src="images/Book22.PNG" >
+                              <img src="images/Book666.PNG">
+                             
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+             
+              <tr>
+                <td>978-9770916738</td>
+                <td>الاب الغني الاب الفقير</td>
+                <td>6500 ل.س</td>
+                <td><input id="check1" class="check" type="checkbox" /></td>
+                <td><input name="choose" type="radio" /></td>
+            </tr>
+            <tr id="details1" class="hidden">
+                <td colspan="5">
+                    <div class="details-container">
+                        <ul class="details-list">
+                            <li><h3>الناشر</h3> روبرت تي_ كيوساكي</li>
+                            <li> <h3>تصنيف الكتاب:</h3> غير روائي</li>
+                            <li> 
+                             <h3> الملخص:</h3>  
+                                كان لديَّ أبوان، أبٌ غني وأبٌ فقير، ومن هذه القصة، يبدأ ملخص كتاب الاب الغني والاب الفقير.
+
+أحدهما حاصل على أعلى الشهادات والآخر لم يكمل تعليمه الإعدادي.
+
+كلاهما عمل بجد ونجح في مجاله،
+
+إلا أن الأول عاش حياته يعاني الظروف الصعبة، ومات تاركاً وراءه ديوناً مستحقة أثقلت كاهل عائلته…
+                            </li>
+                        </ul>
+                        <div class="details-images">
+                            <img src="images/book1.PNG" >
+                            <img src="images/book11.PNG" >
+                            <img src="images/Book22.PNG" >
+                        </div>
+                    </div>
+                </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+    
+    <button class="sign-in-buttom" type="button"  onclick="showLoginForm()">
+        متابعة
+        </button>
+     <div class="log-in-form" id="login-form">
+        <h2>تسجيل الدخول</h2>
+            <form action="#" onsubmit="return validateForm()">
+                <label for="">الاسم الكامل</label>
+                <input id="myUsername" placeholder="الأسم  باللغة العربية" >
+                <label for="">الرقم الوطني </label>
+                <input title="00-000000000" id="number_s"  placeholder="الرقم الوطني" maxlength="11" minlength="11" required>
+                <label for=""> تاريخ الولادة </label>
+                <input title="تاريخ الولادة" type="date" placeholder="تاريخ الولادة DD/MM/YYYY">
+                <label for="">رقم الموبايل </label>
+                <input title="*** *** **09" id="phonenumber" type="tel"  placeholder="رقم الموبايل" maxlength="10" minlength="10" pattern="((0)(93|94|95|96|98|99)([0-9]{7}))|((0)(92|95|96|97)([0-9]{7}))">
+                <label for="">الأيميل </label>
+                <input title="name@example.com" id="email" type="email" placeholder="الأيميل">
+                <label for=""> Captcha</label>
+                <input type="text" id="txtCaptcha" placeholder="إضغط تحديث لإظهار رمز التحقق"/>
+                <input type="text" id="txtCompare" placeholder="أدخل الرمز" >      
+                <input type="button" class="refreash" id="btnrefresh" name="captcha" value="تحديث" onclick="Captcha();"/>
+                <button  id="purchaseButton" onclick="validateForm()">ارسال</button>
+        </form>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="myFunctions.js"></script> 
+</body>
+</html>
